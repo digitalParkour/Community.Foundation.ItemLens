@@ -1,0 +1,93 @@
+<project>
+  <Metadata>
+    <metadata>
+      <PackageName>Community-Foundation-ItemLens</PackageName>
+      <Author>james.gregory@americaneagle.com</Author>
+      <Version>1.0</Version>
+      <Revision />
+      <License />
+      <Comment />
+      <Attributes />
+      <Readme>Community.Foundation.ItemLens 1.0
+
+No extra steps required. Just install and enjoy. 
+Tool will be available at /sitecore/lens.aspx
+By default the tool requires Sitecore developer role (or admin) to access.
+
+Review the config file: \App_Config\Include\Foundation\Foundation.ItemLens.config
+
+===============================================
+This package installs the following files:
+===============================================
+
+\App_Config\Include\Foundation\Foundation.ItemLens.config
+\sitecore\lens.aspx
+\bin\Community.Foundation.ItemLens.dll
+\bin\Community.Foundation.ItemLens.pdb
+
+===============================================
+This package installs no data items:
+===============================================
+
+NOTES:
+If you prefer moving lens.aspx into \sitecore\admin folder be aware that resolving item by relative or absolute URL will not work as the admin folder has its own Sitecore site context.</Readme>
+      <Publisher />
+      <PostStep />
+      <PackageID />
+    </metadata>
+  </Metadata>
+  <SaveProject>True</SaveProject>
+  <Sources>
+    <xfiles>
+      <Entries>
+        <x-item>/App_Config/Include/Foundation/Foundation.ItemLens.config</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms />
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>Config</Name>
+    </xfiles>
+    <xfiles>
+      <Entries>
+        <x-item>/bin/Community.Foundation.ItemLens.dll</x-item>
+        <x-item>/bin/Community.Foundation.ItemLens.pdb</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms />
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>bin</Name>
+    </xfiles>
+    <xfiles>
+      <Entries>
+        <x-item>/sitecore/lens.aspx</x-item>
+      </Entries>
+      <Converter>
+        <FileToEntryConverter>
+          <Root>/</Root>
+          <Transforms />
+        </FileToEntryConverter>
+      </Converter>
+      <Include />
+      <Exclude />
+      <Name>tool</Name>
+    </xfiles>
+  </Sources>
+  <Converter>
+    <TrivialConverter>
+      <Transforms />
+    </TrivialConverter>
+  </Converter>
+  <Include />
+  <Exclude />
+  <Name />
+</project>
