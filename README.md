@@ -15,7 +15,7 @@ Quickly identify Sitecore data discrepancies between states of cache, indexes, a
 
 Example
 --------------
-![alt text](https://github.com/digitalParkour/Community.Foundation.ItemLens/raw/master/screenshots/ItemLensExample.png "Screensot Example")
+![alt text](https://github.com/digitalParkour/Community.Foundation.ItemLens/raw/master/screenshots/ItemLensExample.png "Screenshot Example")
 
 Installation
 --------------
