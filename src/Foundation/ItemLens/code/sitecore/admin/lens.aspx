@@ -4,7 +4,7 @@
 <head runat="server">
     <title>Item Viewer</title>
     <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/sitecore/admin/lens-bootstrap.min.css" rel="stylesheet" type="text/css" />
     <style>
         body{
             background-color:#C0C0C0;

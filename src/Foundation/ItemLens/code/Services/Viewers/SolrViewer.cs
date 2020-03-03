@@ -38,7 +38,12 @@ namespace Community.Foundation.ItemLens.Services
 
         private string GetSolrResponse(string indexName, ID itemId)
         {
-            var solrEndpoint = Sitecore.Configuration.Settings.GetSetting("ContentSearch.Solr.ServiceBaseAddress").TrimEnd('/');
+            var solrEndpoint = Sitecore.Configuration.Settings.GetSetting("ContentSearch.Solr.ServiceBaseAddress")?.TrimEnd('/');
+			// Sitecore 9.1+ moved solr connstring
+			if (string.IsNullOrWhiteSpace(solrEndpoint))
+            {
+                solrEndpoint = System.Configuration.ConfigurationManager.ConnectionStrings["solr.search"]?.ToString().TrimEnd('/');
+            }
             if (
                 string.IsNullOrWhiteSpace(solrEndpoint)
                 || string.IsNullOrWhiteSpace(indexName)

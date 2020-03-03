@@ -79,6 +79,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\Foundation\Foundation.ItemLens.config" />
+    <Content Include="sitecore\admin\lens-bootstrap.min.css" />
+    <Content Include="sitecore\admin\lens.aspx" />
     <None Include="Properties\PublishProfiles\Local.pubxml" />
     <None Include="Web.config" />
   </ItemGroup>
@@ -94,14 +96,14 @@
     <Compile Include="Services\Viewers\SqlViewer.cs" />
     <Compile Include="Services\Viewers\ApiViewer.cs" />
     <Compile Include="Services\Viewers\SolrViewer.cs" />
-    <Compile Include="sitecore\lens.aspx.cs">
+    <Compile Include="Models\LensInput.cs" />
+    <Compile Include="sitecore\admin\lens.aspx.cs">
       <DependentUpon>lens.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="sitecore\lens.aspx.designer.cs">
+    <Compile Include="sitecore\admin\lens.aspx.designer.cs">
       <DependentUpon>lens.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Models\LensInput.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -111,9 +113,6 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="sitecore\lens.aspx" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
